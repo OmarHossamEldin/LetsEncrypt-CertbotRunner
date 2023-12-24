@@ -1,0 +1,19 @@
+{
+    "name": "reneknox/lets-encrypt",
+    "description": "api to cretificate domains",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Reneknox\\LetsEncrypt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Omar Hossam",
+            "email": "okandil273@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
