@@ -5,7 +5,7 @@ namespace Reneknox\LetsEncrypt;
 
 class CertbotRunner {
     public function runCertbot($domains, $email) {
-        echo "Running Certbot..." . PHP_EOL;
+        echo "Running Certbot... <br>";
 
         $certbotCommand = "certbot --apache -d " . implode(' -d ', $domains);
         $descriptorSpec = [
@@ -30,9 +30,9 @@ class CertbotRunner {
 
             $returnValue = proc_close($process);
             if ($returnValue === 0) {
-                echo "Certbot command executed successfully." . PHP_EOL;
+                echo "Certbot command executed successfully. <br>";
             } else {
-                echo "Error executing Certbot command." . PHP_EOL;
+                echo "Error executing Certbot command. <br>";
             }
         }
     }
