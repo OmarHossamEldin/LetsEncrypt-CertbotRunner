@@ -7,7 +7,7 @@ class CertbotRunner {
     public function runCertbot($domains, $email) {
         echo "Running Certbot... <br>";
 
-        $certbotCommand = "certbot --apache -d " . implode(' -d ', $domains);
+        $certbotCommand = "sudo certbot --apache -d " . implode(' -d ', $domains);
         $descriptorSpec = [
             0 => ["pipe", "r"], // stdin
             1 => ["pipe", "w"], // stdout
