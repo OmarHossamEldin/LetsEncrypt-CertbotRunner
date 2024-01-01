@@ -15,7 +15,7 @@ class CertbotInstaller {
             echo "Installing $packageName... <br>";
             shell_exec('sudo amazon-linux-extras install epel -y');
             shell_exec("sudo yum update -y");
-            shell_exec("sudo yum install $packageName python3-$packageName-apache -y");
+            shell_exec("sudo yum install $packageName python3 $packageName-apache -y");
         } else {
             echo "$packageName is already installed. <br>";
         }
